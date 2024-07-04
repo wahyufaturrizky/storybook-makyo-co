@@ -1,7 +1,9 @@
 import "../src/index.css";
+import "../src/tailwind.css";
 
 // Registers the msw addon
 import { initialize, mswLoader } from "msw-storybook-addon";
+import { withThemeByClassName } from "@storybook/addon-themes";
 
 // Initialize MSW
 initialize();
@@ -18,6 +20,16 @@ const preview = {
     },
   },
   loaders: [mswLoader],
+  decorators: [
+    withThemeByClassName({
+      themes: {
+        light: "light",
+        dark: "dark",
+      },
+      defaultTheme: "light",
+      attributeName: "data-mode",
+    }),
+  ],
 };
 
 export default preview;
