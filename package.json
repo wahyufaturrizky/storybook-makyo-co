@@ -1,18 +1,18 @@
 {
-  "name": "intro-storybook-react-template",
+  "name": "@wahyufaturrizkidev/intro-storybook-react-template",
   "version": "0.2.0",
   "description": "Starter template to get up and running quickly with React and Storybook",
   "author": "Chromatic <https://chromatic.com/>",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chromaui/intro-storybook-react-template"
+    "url": "git+https://github.com/chromaui/intro-storybook-react-template.git"
   },
   "bugs": {
     "url": "https://github.com/chromaui/intro-storybook-react-template/issues"
   },
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -65,5 +65,10 @@
     "workerDirectory": [
       "public"
     ]
-  }
+  },
+  "main": "postcss.config.js",
+  "keywords": [
+    "storybook"
+  ],
+  "homepage": "https://github.com/chromaui/intro-storybook-react-template#readme"
 }
